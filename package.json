@@ -1,0 +1,13 @@
+{
+  "name": "hotel-agency",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/tailwind.css",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18",
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}
