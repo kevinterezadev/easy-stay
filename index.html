@@ -22,16 +22,193 @@
             rel="stylesheet">
 
         <!-- CSS e JS -->
-        <link rel="stylesheet" href="./assets/css/output.css" />
+        <link rel="stylesheet" href="./assets/css/tailwind.css" />
         <script src="./assets/js/nav.js" defer></script>
 
         <!-- Título -->
-        <title>EasyStay — Hotéis de qualidade</title>
+        <title>EasyStay - Hotéis de qualidade</title>
     </head>
 </head>
 
-<body>
+<body class="bg-gray-200 font-inter overflow-x-hidden">
+    <header class="bg-white relative z-50">
+        <div class="
+        max-w-[calc(100%-1rem)]
+        sm:max-w-[90%]
+        xl:max-w-[80rem]
+        mx-auto
+        flex items-center justify-between
+        p-5
+      ">
+            <h1 class="
+          text-3xl font-poppins font-semibold
+          text-cyan-900
+          cursor-pointer
+          transition-all hover:text-cyan-600
+        ">
+                EasyStay
+            </h1>
 
+            <nav>
+                <ul id="menu" class="
+            fixed right-0 top-0
+            h-screen w-2/4
+            bg-white
+            py-32
+            text-center
+            space-y-8
+            text-gray-950
+            translate-x-full
+            transition-transform duration-300 ease-in-out
+            [&.open]:translate-x-0
+            z-50
+
+            md:static
+            md:h-auto md:w-auto
+            md:py-0
+            md:translate-x-0
+            md:transition-none
+            md:flex
+            md:gap-4
+            md:space-y-0
+          ">
+                    <li>
+                        <a href="#" class="
+                text-lg
+                transition-all
+                hover:text-cyan-800
+                hover:text-xl
+                hover:text-shadow-lg
+
+                md:text-base
+                md:hover:text-base
+                md:hover:text-shadow-none
+              ">
+                            Como reservar
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="
+                text-lg transition-all
+                hover:text-cyan-800 hover:text-xl hover:text-shadow-lg
+                md:text-base md:hover:text-base md:hover:text-shadow-none
+              ">
+                            Sobre nós
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="
+                text-lg transition-all
+                hover:text-cyan-800 hover:text-xl hover:text-shadow-lg
+                md:text-base md:hover:text-base md:hover:text-shadow-none
+              ">
+                            Informações
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="
+                text-lg transition-all
+                hover:text-cyan-800 hover:text-xl hover:text-shadow-lg
+                md:text-base md:hover:text-base md:hover:text-shadow-none
+              ">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button id="hamburguer" class="
+          md:hidden
+          z-60
+          group 
+          flex flex-col items-end
+          gap-1.5
+        ">
+                <span class="
+            h-[3px] w-7 rounded bg-gray-950
+            transition-all
+            group-[.open]:translate-y-[9px]
+            group-[.open]:rotate-45
+          "></span>
+
+                <span class="
+            h-[3px] w-5 rounded bg-gray-950
+            transition-all
+            group-[.open]:opacity-0
+          "></span>
+
+                <span class="
+            h-[3px] w-7 rounded bg-gray-950
+            transition-all
+            group-[.open]:-translate-y-[9px]
+            group-[.open]:-rotate-45
+          "></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="
+      hero
+      h-screen
+      sm:h-[70vh]
+      lg:h-[90vh]
+      bg-cover bg-center
+      flex flex-col items-center justify-center
+      gap-6
+      text-white
+      
+    ">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl sm:text-4xl font-semibold">
+                Onde você quer ir?
+            </h2>
+
+            <h1 class="
+          text-sm sm:text-lg
+          max-w-4/5 sm:max-w-fit
+          mx-auto
+          text-gray-100
+        ">
+                Escolha o estado e cidade para achar os melhores hotéis.
+            </h1>
+        </div>
+
+        <form action="#">
+            <fieldset class="
+          flex flex-wrap
+          items-center justify-center
+          gap-2.5
+        ">
+                <select class="w-44 py-3 text-center bg-white text-gray-500 rounded-sm">
+                    <option>Escolha estado</option>
+                </select>
+
+                <select class="w-44 py-3 text-center bg-white text-gray-500 rounded-sm">
+                    <option>Escolha cidade</option>
+                </select>
+
+                <button id="submit" class="
+            w-44 py-3
+            bg-amber-600
+            rounded-sm
+            text-gray-950
+            flex items-center justify-center gap-1
+          ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                    Pesquisar resorts
+                </button>
+            </fieldset>
+        </form>
+    </section>
 </body>
+
 
 </html>
