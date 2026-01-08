@@ -4,3 +4,22 @@
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "inter", sans-serif;
 }
+
+.hero {
+  position: relative;
+  background-image: url("../images/partials/hero/hero.jpg");
+  isolation: isolate;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
