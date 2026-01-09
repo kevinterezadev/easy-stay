@@ -17,7 +17,35 @@ Mini projeto estático desenvolvido como parte de um curso de Tailwind CSS. O ob
 
 ## 🔧 Rodar localmente
 
-Caso queira visualizar ou modificar o código localmente:
+Para visualizar ou modificar o projeto localmente:
+
+1.  **Clone o repositório:**
+
+    ```bash
+    git clone https://github.com/kevinterezadev/easy-stay.git
+    ```
+
+2.  **Acesse o diretório do projeto:**
+
+    ```bash
+    cd easy-stay
+    ```
+
+3.  **Instale as dependências:**
+
+    ```bash
+    npm install
+    ```
+
+4.  **Inicie o Tailwind CSS via CLI em modo watch:**
+
+    ```bash
+    npx tailwindcss -i ./src/input.css -o ./public/output.css –watch
+    ```
+
+5.  **Abra o arquivo `index.html` O arquivo está localizado na pasta public.**
+
+_Observação: Este projeto utiliza Tailwind CSS via CLI._
 
 ## 📄 Licença
 
