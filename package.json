@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css",
+    "build": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/tailwind.css",
     "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/tailwind.css --watch"
   },
   "devDependencies": {
