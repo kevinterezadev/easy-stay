@@ -23,3 +23,58 @@
   position: relative;
   z-index: 1;
 }
+
+.cta div {
+  position: relative;
+}
+
+.cta div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.874) 0%,
+    rgba(0, 0, 0, 0.3) 15%,
+    rgba(0, 0, 0, 0) 30%
+  );
+  pointer-events: none;
+}
+
+.cta div:nth-of-type(1):after {
+  content: "Pouso dos Pinheiros";
+  position: absolute;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  color: white;
+  font-weight: 600;
+}
+
+.cta div:nth-of-type(2):after {
+  content: "Refúgio das Palmeiras";
+  position: absolute;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  color: white;
+  font-weight: 600;
+}
+
+.cta div:nth-of-type(3):after {
+  content: "Blue Lagoon Resort";
+  position: absolute;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  color: white;
+  font-weight: 600;
+}
+
+.cta div:nth-of-type(4):after {
+  content: "Pousada Madeira Serena";
+  position: absolute;
+  left: 0.625rem;
+  bottom: 0.625rem;
+  color: white;
+  font-weight: 600;
+}
